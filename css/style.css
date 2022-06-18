@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root
+{
+    --bg: #F8F8FB;
+    --container-col: #FFFFFF;
+    --primary-col: #FC6501;
+    --temporay-col: #DE3153;
+    --dark-test: #2F2F2F;
+    --font: font-family: 'Poppins', sans-serif;
+    --text-col: #2F2F2F;
+
+}
+body{
+     background: var(--bg);
+}
+a
+{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p
+{
+    margin: 0;
+    padding: 0;
+}
+/* body,html{
+    overflow-x: hidden;
+} */
+ol,ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* navabr part css start */
+
+.navbar {
+    background: var(--container-col);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar input
+{
+    width: 100%;
+    border: 1px solid var(--primary-col) !important;
+    padding: 12px 10px;
+    border-radius: 50px;
+}
+#search 
+{
+    width: 45%;
+    position: relative;
+}
+.navbar .btn {
+    position: absolute;
+    color: #fff;
+    background-color: var(--primary-col);
+    border: 1px solid var(--primary-col);
+    border-radius: 50px;
+    padding: 7px 34px !important;
+    right: 1%;
+    top: 9%;
+}
+.navbar ul li
+{
+    margin-left: 25px;
+}
+
+.navbar ul li a svg
+{
+    width: 40px;
+    height: 25px;
+    fill: var(--primary-col);
+    margin-left: -6px;
+}
+.navbar ul li a  p
+{
+    font: var(--font);
+    font: 14px;
+    font-weight: 400;
+    color: black;
+    margin-right: 5px;
+    padding-top: 8px;
+}
+/* navabr part css end */
+
+
+/* banner part css end */
+#banner-part 
+{
+    margin-bottom: 45px;
+}
+.preference
+{
+    background: var(--container-col);
+    padding: 0 15px;
+    padding-bottom: 8px;
+}
+#banner-part .preference h5
+{
+    padding: 10px 0;
+    position: relative;
+}
+#banner-part .preference h5::before
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    left: 0;
+}
+#banner-part .preference ul li
+{
+    margin-top: 10px;
+}
+#banner-part .preference ul li a
+{
+    color: black;
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+}
+#banner-part .preference ul li svg{
+    position: absolute;
+    content: '';
+    top: 6px;
+    right: 0;
+    width: 5px;
+    height: 9px;
+}
+
+
+/* banner-part slider csss */
+
+#banner-part .banner-slider
+{
+    background: black;
+}
+
+#banner-part .banner-slider .carousel-inner .img
+{
+    position: relative;
+}
+
+#banner-part .banner-slider .carousel-inner .overlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    content: '';
+}
+#banner-part .banner-slider .carousel-inner .overlay h5
+{
+    color: white;
+    font-family: var(--font);
+    font-size: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    content: '';
+}
+
+/* slider by defult icon edit */
+.carousel-control-prev-icon {
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e); */
+    background-image: none;
+}
+/* slider by defult icon edit */
+.carousel-control-next-icon {
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e); */
+    background-image: none;
+}
+
+.carousel-control-prev-icon svg,
+.carousel-control-next-icon svg
+{
+    fill: white !important;
+    width: 30px;
+    height: 30px;
+}
+
+/* slider by defult pointer edit */
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+/* banner part right side product css */
+.top-product
+{
+    background: var(--container-col);
+    padding: 0 15px;
+    padding-bottom: 8px;
+}
+#banner-part .top-product h5
+{
+    padding: 10px 0;
+    position: relative;
+}
+#banner-part .top-product h5::before
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    left: 0;
+}
+
+#banner-part .top-product .item
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+#banner-part .top-product .img
+{
+    width: 50%;
+    margin-right: 10px;
+}
+#banner-part .top-product .img img
+{
+    width: 100%;
+}
+
+#banner-part .top-product .item h6
+{
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+#banner-part .top-product .item p
+{
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* banner part css end */
+
+/* product part and slider css start */
+
+
+#product-part h6
+{
+    margin-bottom: 20px;
+    color: var(--text-col);
+    position: relative;
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 600;
+}
+#product-part h6 span a
+{
+    color: var(--text-col);
+    position: absolute;
+    top: 0;
+    right: 10%;
+    content: '';
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 600;
+}
+#product-part .slider-slider
+{
+    padding: 10px;
+}
+
+/* slick slider padding edit */
+#product-part .slider-slider {
+    padding: 0px;
+}
+#product-part .item 
+{
+    margin-right: 20px;
+    background: var(--container-col);
+    margin-bottom: 25px;
+    padding: 15px;
+}
+#product-part .item .img
+{
+    width: 100%;
+}
+#product-part .item .img img
+{
+    width: 100%;
+}
+#product-part .item .text 
+{
+    text-align: center;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-col);
+}
+#product-part .item .footer-text a
+{
+    color: var(--text-col);
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+}
+#product-part .item .footer-text #heart
+{
+    color: var(--text-col);
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top: -35px;
+    right: 0;
+    content: '';
+}
+#product-part .item .footer-text a svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--primary-col);
+}
+#prev {
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: -12%;
+    right: 6%;
+    z-index: 2;
+    content: '';
+    fill: var(--text-col);
+    cursor: pointer;
+}
+#next {
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: -12%;
+    right: 2%;
+    content: '';
+    fill: var(--text-col);
+    cursor: pointer;
+}
+
+/* product part and slider css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
